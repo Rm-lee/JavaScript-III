@@ -50,6 +50,18 @@ function userDb(username,password,email){
 
 // Principle 4
 
+function switcheroo(dog,cat){
+ this.dog = dog,
+ this.cat = cat,
+ this.tell = function() {
+  console.log('My dog is a',this.dog, 'My cat is a',this.cat);
+  console.log(this);
+ }
+}
+const bill = new switcheroo('pit bull', 'tabby');
+const sarah = new switcheroo('wolf','lion');
+
+sarah.tell.call(bill);
 
 
 // code example for Explicit Binding
