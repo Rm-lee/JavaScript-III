@@ -4,7 +4,7 @@
 * 1. Windoow/global Object Binding, in this scope the this word will refer to the window/console Object
 * 2. Implicit Binding, when a method is called the object left of the dot is "this"
 * 3. New Binding, this will refer to the new instance of the object you have created using the constructor function
-* 4. 
+* 4. Explicit Binding, using the apply or call method "this" will refer to the what is being passed into the method.
 *
 * write out a code example of each explanation above
 */
